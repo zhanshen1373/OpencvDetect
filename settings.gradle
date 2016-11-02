@@ -1,0 +1,2 @@
+include ':app', ':okhttputils', ':surfaceview', ':viewpager'
+include ':openCVLibrary2411'

@@ -19,6 +19,8 @@ public class MainActivity extends Activity {
     private int ImageArray[]={R.drawable.lp,R.drawable.lcf,R.drawable.dry,R.drawable.szgt};
     private List<ImageView> list;
 
+
+
     private Handler hd=new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -36,7 +38,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         viewpager = (ViewPager) findViewById(R.id.viewpager);
         list=new ArrayList<>();
-
 
 
         for (int i=0;i<ImageArray.length;i++){
@@ -83,6 +84,6 @@ public class MainActivity extends Activity {
         hd.removeMessages(0);
         hd.sendEmptyMessageDelayed(0,2000);
 
-
     }
+
 }
